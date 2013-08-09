@@ -1,24 +1,23 @@
 # RackRuntimeGrowlNotifier
 
-TODO: Write a gem description
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'rack_runtime_growl_notifier'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install rack_runtime_growl_notifier
+    group :development do
+      gem 'rack_runtime_growl_notifier', github: 'madeth/rack_runtime_growl_notifier'
+    end
 
 ## Usage
 
-TODO: Write usage instructions here
+Add setting code to `config/environments/development.rb`
+
+    config.rack_runtime_growl_notifier.enable = true
+    config.rack_runtime_growl_notifier.info = 100
+    config.rack_runtime_growl_notifier.warning = 200
+    config.rack_runtime_growl_notifier.error = 500
+
 
 ## Contributing
 
